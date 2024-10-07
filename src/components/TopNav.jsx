@@ -14,11 +14,11 @@ import {
 
 import { FaCircleUser } from "react-icons/fa6";
 
-const TopNav = () => {
+const TopNav = ({title}) => {
   return (
-    <Box boxShadow="xl">
-      <HStack maxW="80rem" h="16" justify="space-between" px="32" mx="auto">
-        <Heading fontWeight="medium" fontSize="28px">Dashboard</Heading>
+    <Box>
+      <HStack maxW="70rem" h="16" justify="space-between" mx="auto">
+        <Heading fontWeight="medium" fontSize="28px">{title}</Heading>
         <Menu>
           <MenuButton>
             <Icon as={FaCircleUser} fontSize="24px" />
