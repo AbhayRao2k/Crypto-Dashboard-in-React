@@ -3,10 +3,13 @@ import Sidenav from "../../components/Sidenav";
 import TopNav from "../../components/TopNav";
 import DashboardLayout from "../../components/DashboardLayout";
 import { title } from "framer-motion/client";
+import PortfolioSection from "./components/PortfolioSection";
 
 const Dashboard = () => {
   return (
-    <DashboardLayout title="Dashboard">How are you</DashboardLayout>
+    <DashboardLayout title="Dashboard">
+      <PortfolioSection />
+    </DashboardLayout>
   );
 };
 

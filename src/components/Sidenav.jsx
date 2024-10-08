@@ -19,17 +19,17 @@ const Sidenav = () => {
 
   return (
     <Stack
+      bg="white"
       justify="space-between"
       boxShadow={{
         base: "none",
-        lg: "lg"
+        lg: "lg",
       }}
       w={{
         base: "full",
-        lg: "16rem"
+        lg: "16rem",
       }}
       h="100vh"
-     
     >
       <Box>
         <Heading textAlign="center" fontSize="20px" as="h1" pt="56px">
@@ -43,10 +43,10 @@ const Sidenav = () => {
               py="3"
               px="4"
               _hover={{
-                bg: "#f3f3f7",
+                bg: "#F3F3F7",
                 color: "#171717",
               }}
-              color="#797e82"
+              color="#797E82"
             >
               <Icon as={nav.icon} />
               <Text fontSize="14px" fontWeight="medium">
