@@ -6,6 +6,7 @@ import SideDrawer from "./SideDrawer";
 
 const DashboardLayout = ({ title, children }) => {
   const { isOpen, onClose, onOpen } = useDisclosure();
+
   return (
     <Flex>
       <Box
@@ -13,13 +14,19 @@ const DashboardLayout = ({ title, children }) => {
           base: "none",
           lg: "flex",
         }}
-        >
-        <Sidenav/>
+      >
+        <Sidenav />
       </Box>
       <SideDrawer isOpen={isOpen} onClose={onClose} />
       <Box flexGrow={1}>
         <TopNav title={title} onOpen={onOpen} />
-        <Container mt="6" maxW="70rem">
+        <Container
+          overflowX="hidden"
+          overflowY="auto"
+          h="calc(100vh - 88px)"
+          mt="6"
+          maxW="70rem"
+        >
           {children}
         </Container>
       </Box>
